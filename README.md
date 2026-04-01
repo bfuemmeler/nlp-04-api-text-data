@@ -37,13 +37,13 @@ Each stage is implemented as a modular component with explicit inputs and output
 These files define the EVTL pipeline and the components you will update for your project.
 
 - **src/nlp/pipeline_api_json.py** - Main pipeline orchestrator (no changes required)
-- **src/nlp/config_case.py** - Configuration for API access and paths (<mark>**copy and edit**</mark> for your project)
+- **src/nlp/config_fuemmeler.py** - Configuration for API access and paths
 - **src/nlp/stage01_extract.py** - Extract stage: retrieves data from the API (no changes required)
-- **src/nlp/stage02_validate_case.py** - Validate stage: inspects and verifies JSON structure (<mark>**copy and edit**</mark>)
-- **src/nlp/stage03_transform_case.py** - Transform stage: converts JSON into structured data (<mark>**copy and edit**</mark>)
+- **src/nlp/stage02_validate_fuemmeler.py** - Validate stage: inspects and verifies JSON structure
+- **src/nlp/stage03_transform_fuemmeler.py** - Transform stage: converts JSON into structured data
 - **src/nlp/stage04_load.py** - Load stage: writes output to persistent storage (no changes required)
-- **pyproject.toml** - Project metadata and dependencies (<mark>**update**</mark> authorship, links, and dependencies)
-- **zensical.toml** - Documentation configuration (<mark>**update**</mark> authorship and links)
+- **pyproject.toml** - Project metadata and dependencies
+- **zensical.toml** - Documentation configuration
 
 ## First: Follow These Instructions
 
@@ -86,7 +86,7 @@ open a machine terminal in your `Repos` folder:
 
 ```shell
 # Replace username with YOUR GitHub username.
-git clone https://github.com/username/nlp-04-api-text-data
+git clone https://github.com/bfuemmeler/nlp-04-api-text-data
 cd nlp-04-api-text-data
 code .
 ```

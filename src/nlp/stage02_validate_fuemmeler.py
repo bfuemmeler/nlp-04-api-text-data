@@ -1,6 +1,5 @@
 """
-stage02_validate_case.py
-(EDIT YOUR COPY OF THIS FILE)
+stage02_validate_fuemmeler.py
 
 Source: raw JSON object
 Sink: validated JSON object
