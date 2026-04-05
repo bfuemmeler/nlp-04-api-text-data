@@ -194,3 +194,18 @@ so later steps can run without errors or unexpected results.
 In this project, validation is implemented directly,
 so all checks are visible, repeatable, and easy to review as part
 of the pipeline.
+
+## Phase 4 Technical Modifications
+-Changed the API endpoint to another JSONPlaceholder route (from "posts" to "comments")
+-Changed output file to "fuemmeler_processed.csv"
+
+## Phase 5 Apply Skills to New Problem
+-Update config_fuemmeler.py with new API URL https://jsonplaceholder.typicode.com/users
+-Update the Transform stage to match API file
+-Re-run pipeline and watch for success
+
+Structure of JSON: List
+3 useful fields: name, email, company_name
+These 3 would all matter if you were contacting all users by email and needed to identify them by their company name.
+
+Change made in Transform were to the list of column names in the API. Once that was changed successfully, the pipeline ran as expected.
